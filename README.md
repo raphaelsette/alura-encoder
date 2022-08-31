@@ -31,3 +31,7 @@ Decodificar: "oberraiclenter" => "oracle"
 ## Autores
 
 - [@raphaelsette](https://www.github.com/raphaelsette)
+
+<div align="center">
+<a href="https://github.com/raphaelsette" target="_blank" rel="noreferrer"><img src="https://i.imgur.com/1fnHtDD.png" width="20%"/></a>
+</div>
