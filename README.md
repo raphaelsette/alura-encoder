@@ -1,4 +1,8 @@
 
+<div align="center">
+<a href="https://github.com/raphaelsette" target="_blank" rel="noreferrer"><img src="https://i.imgur.com/1fnHtDD.png" width="20%"/></a>
+</div>
+
 # Challenge Oracle Next Education + Alura
 
 Desenvolvimento de um codificador e decodificador de texto com JavaScript, HTML5 e CSS3.
@@ -32,6 +36,3 @@ Decodificar: "oberraiclenter" => "oracle"
 
 - [@raphaelsette](https://www.github.com/raphaelsette)
 
-<div align="center">
-<a href="https://github.com/raphaelsette" target="_blank" rel="noreferrer"><img src="https://i.imgur.com/1fnHtDD.png" width="20%"/></a>
-</div>
