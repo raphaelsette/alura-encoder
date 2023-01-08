@@ -24,7 +24,7 @@ Decodificar: "oberraiclenter" => "oracle"
 
 ## Demonstração
 
-[https://raphaelsette.github.io/codificador-alura/](https://raphaelsette.github.io/codificador-alura/)
+[https://raphast.github.io/codificador-alura/](https://raphast.github.io/codificador-alura/)
 
 ## Referências
 
@@ -34,5 +34,5 @@ Decodificar: "oberraiclenter" => "oracle"
 
 ## Autores
 
-- [@raphaelsette](https://www.github.com/raphaelsette)
+- [@raphast](https://www.github.com/raphast)
 
