@@ -24,7 +24,7 @@ Decoder: "oberraiclenter" => "oracle"
 
 ## Preview
 
-[https://raphaelsette.github.io/codificador-alura/](https://raphaelsette.github.io/codificador-alura/)
+[https://raphaelsette.github.io/alura-encoder/](https://raphaelsette.github.io/alura-encoder/)
 
 ## References
 
