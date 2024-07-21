@@ -62,29 +62,30 @@ function descriptografar() {
             icon: "error",
             title: "Digite um texto para descriptografar."
         });
+    } else {
+        const msgDescriptografada = msgEntrada
+            .replace(/enter/g, 'e')
+            .replace(/imes/g, 'i')
+            .replace(/ai/g, 'a')
+            .replace(/ober/g, 'o')
+            .replace(/ufat/g, 'u');
+        inputSaida.value = msgDescriptografada;
+        const Toast = Swal.mixin({
+            toast: true,
+            position: "top-end",
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.onmouseenter = Swal.stopTimer;
+                toast.onmouseleave = Swal.resumeTimer;
+            }
+        });
+        Toast.fire({
+            icon: "success",
+            title: "O texto foi descriptografado."
+        });
     }
-    const msgDescriptografada = msgEntrada
-        .replace(/enter/g, 'e')
-        .replace(/imes/g, 'i')
-        .replace(/ai/g, 'a')
-        .replace(/ober/g, 'o')
-        .replace(/ufat/g, 'u');
-    inputSaida.value = msgDescriptografada;
-    const Toast = Swal.mixin({
-        toast: true,
-        position: "top-end",
-        showConfirmButton: false,
-        timer: 3000,
-        timerProgressBar: true,
-        didOpen: (toast) => {
-            toast.onmouseenter = Swal.stopTimer;
-            toast.onmouseleave = Swal.resumeTimer;
-        }
-    });
-    Toast.fire({
-        icon: "success",
-        title: "O texto foi descriptografado."
-    });
 }
 function copiar() {
     const copiarInputSaida = document.getElementById('input-saida');
