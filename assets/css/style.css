@@ -10,6 +10,7 @@ body {
     font-family: 'Inter', sans-serif;
     margin-bottom: 100px;
 }
+
 header {
     display: flex;
     justify-content: center;
@@ -17,20 +18,24 @@ header {
     background: #0A3871;
     text-align: center;
 }
+
 #logo {
     width: 31.09px;
     height: 48px;
     padding: 10px;
 }
+
 section {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 .conteudo-entrada {
     margin: 0 0 0 5%;
     width: 55%;
 }
+
 .conteudo-entrada textarea {
     width: 100%;
     height: 60%;
@@ -43,18 +48,22 @@ section {
     resize: none;
     margin-top: 30px;
 }
+
 .conteudo-entrada textarea::placeholder {
     color: #0A3871;
 }
+
 .conteudo-entrada img {
     width: 16px;
     height: 16px;
 }
+
 .conteudo-entrada p {
     margin-bottom: 16px;
     font-size: 12px;
     color: #495057;
 }
+
 #botao-criptografar {
     width: 45%;
     height: 67px;
@@ -65,11 +74,13 @@ section {
     color: #FFFFFF;
     font-size: 16px;
 }
+
 #botao-criptografar:hover {
     cursor: pointer;
     transition: 1s all;
     transform: scale(1.1) rotate(1deg);
 }
+
 #botao-descriptografar {
     width: 45%;
     height: 67px;
@@ -81,12 +92,14 @@ section {
     color: #0A3871;
     border-color: #0A3871;
 }
+
 #botao-descriptografar:hover {
     cursor: pointer;
     transition: 1s all;
     transform: scale(1.1) rotate(1deg);
 }
-.conteudo-saida{
+
+.conteudo-saida {
     text-align: center;
     width: 30%;
     height: 100%;
@@ -96,6 +109,7 @@ section {
     border-radius: 32px;
     margin: 2%;
 }
+
 .conteudo-saida textarea {
     width: 100%;
     height: 100%;
@@ -106,6 +120,7 @@ section {
     border: none;
     resize: none;
 }
+
 #botao-copiar {
     width: 85%;
     height: 67px;
@@ -118,11 +133,13 @@ section {
     color: #0A3871;
     font-size: 16px;
 }
+
 #botao-copiar:hover {
     cursor: pointer;
     transition: 1s all;
     transform: scale(1.1) rotate(1deg);
 }
+
 footer {
     justify-content: center;
     height: 60px;
@@ -132,38 +149,47 @@ footer {
     position: absolute;
     bottom: 0;
 }
+
 .svg-white {
     filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(296deg) brightness(104%) contrast(101%);
     width: 30px;
     padding: 10px;
 }
+
 @media screen and (max-width: 480px) {
     .conteudo-entrada {
         padding: 20px;
         margin: auto auto;
         text-align: center;
     }
+
     .conteudo-entrada textarea {
         max-width: 100%;
     }
+
     .conteudo-entrada button {
         margin-bottom: 5px;
     }
+
     .conteudo-saida {
         padding: 20px;
         margin: 10px auto 10px auto;
         width: 85%;
     }
+
     #botao-criptografar {
         width: 100%;
     }
+
     #botao-descriptografar {
         width: 100%;
     }
+
     #botao-copiar {
         width: 100%;
     }
 }
+
 @media screen and (max-width: 1365px) {
     .conteudo-entrada {
         padding: 20px;
@@ -171,20 +197,25 @@ footer {
         text-align: center;
         width: 85%;
     }
+
     .conteudo-entrada textarea {
         max-width: 100%;
     }
+
     .conteudo-entrada button {
         margin-bottom: 5px;
     }
+
     .conteudo-saida {
         padding: 20px;
         margin: 10px auto 10px auto;
         width: 85%;
     }
+
     .conteudo-saida textarea {
         max-width: 100%;
     }
+
     #botao-copiar {
         width: 100%;
     }
