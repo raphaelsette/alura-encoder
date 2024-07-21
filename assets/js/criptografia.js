@@ -1,6 +1,9 @@
+const inputEntrada = document.getElementById('input-entrada');
+const inputSaida = document.getElementById('input-saida');
+
 function criptografar() {
-    const msg = document.getElementById('entrada-texto').value.trim();
-    if (!msg) {
+    const msgEntrada = inputEntrada.value.trim();
+    if (!msgEntrada) {
         Swal.fire({
             icon: "warning",
             title: "Oops...",
@@ -8,13 +11,18 @@ function criptografar() {
             confirmButtonColor: "#3085d6"
         });
     } else {
-        let novamsg = msg.replace(/e/g, 'enter').replace(/i/g, 'imes').replace(/a/g, 'ai').replace(/o/g, 'ober').replace(/u/g, 'ufat');
-        parent.document.getElementById('saida-texto').value = novamsg;
+        const msgCriptografada = msgEntrada
+            .replace(/e/g, 'enter')
+            .replace(/i/g, 'imes')
+            .replace(/a/g, 'ai')
+            .replace(/o/g, 'ober')
+            .replace(/u/g, 'ufat');
+        inputSaida.value = msgCriptografada;
     }
 }
 function descriptografar() {
-    const msg = document.getElementById('entrada-texto').value.trim();
-    if (!msg) {
+    const msgEntrada = inputEntrada.value.trim();
+    if (!msgEntrada) {
         Swal.fire({
             icon: "warning",
             title: "Oops...",
@@ -22,12 +30,17 @@ function descriptografar() {
             confirmButtonColor: "#3085d6"
         });
     }
-    let novamsg = msg.replace(/enter/g, 'e').replace(/imes/g, 'i').replace(/ai/g, 'a').replace(/ober/g, 'o').replace(/ufat/g, 'u');
-    parent.document.getElementById('saida-texto').value = novamsg;
+    const msgDescriptografada = msgEntrada
+        .replace(/enter/g, 'e')
+        .replace(/imes/g, 'i')
+        .replace(/ai/g, 'a')
+        .replace(/ober/g, 'o')
+        .replace(/ufat/g, 'u');
+    inputSaida.value = msgDescriptografada;
 }
 function copiar() {
-    const copiarmsg = document.getElementById('saida-texto');
-    copiarmsg.select();
+    const copiarInputSaida = document.getElementById('input-saida');
+    copiarInputSaida.select();
     document.execCommand("copy");
     Swal.fire({
         icon: "success",
