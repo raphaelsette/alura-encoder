@@ -22,6 +22,7 @@ function criptografar() {
     const msgEntrada = inputEntrada.value.trim();
     if (!msgEntrada) {
         sweetAlertToast('error', 'Digite um texto para criptografar.');
+        inputSaida.value = '';
     } else {
         const msgCriptografada = msgEntrada
             .replace(/e/g, 'enter')
@@ -37,6 +38,7 @@ function descriptografar() {
     const msgEntrada = inputEntrada.value.trim();
     if (!msgEntrada) {
         sweetAlertToast('error', 'Digite um texto para descriptografar.');
+        inputSaida.value = '';
     } else {
         const msgDescriptografada = msgEntrada
             .replace(/enter/g, 'e')
