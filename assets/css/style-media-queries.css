@@ -1,0 +1,60 @@
+@media screen and (max-width: 480px) {
+    .conteudo-entrada {
+        padding: 20px;
+        margin: auto auto;
+        text-align: center;
+    }
+
+    .conteudo-entrada textarea {
+        max-width: 100%;
+    }
+
+    .conteudo-entrada button {
+        margin-bottom: 5px;
+    }
+
+    .conteudo-saida {
+        padding: 20px;
+        margin: 10px auto 10px auto;
+        width: 85%;
+    }
+
+    #botao-acao {
+        width: 100%;
+    }
+
+    #botao-copiar {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1365px) {
+    .conteudo-entrada {
+        padding: 20px;
+        margin: auto auto;
+        text-align: center;
+        width: 85%;
+    }
+
+    .conteudo-entrada textarea {
+        max-width: 100%;
+    }
+
+    .conteudo-entrada button {
+        margin-bottom: 5px;
+    }
+
+    .conteudo-saida {
+        padding: 20px;
+        margin: 10px auto 10px auto;
+        width: 85%;
+    }
+
+    .conteudo-saida textarea {
+        max-width: 100%;
+    }
+
+    #botao-copiar {
+        width: 100%;
+    }
+}

@@ -64,39 +64,25 @@ section {
     color: #495057;
 }
 
-#botao-criptografar {
+#botao-acao {
     width: 45%;
     height: 67px;
     border-radius: 24px;
     padding: 24px;
     gap: 8px;
+    border: none;
     background: #0A3871;
     color: #FFFFFF;
     font-size: 16px;
 }
 
-#botao-criptografar:hover {
+#botao-acao:hover {
     cursor: pointer;
-    transition: 1s all;
-    transform: scale(1.1) rotate(1deg);
-}
-
-#botao-descriptografar {
-    width: 45%;
-    height: 67px;
-    border-radius: 24px;
-    padding: 24px;
-    gap: 8px;
-    background: #D8DFE8;
-    font-size: 16px;
-    color: #0A3871;
+    border: 1px solid;
     border-color: #0A3871;
-}
-
-#botao-descriptografar:hover {
-    cursor: pointer;
-    transition: 1s all;
-    transform: scale(1.1) rotate(1deg);
+    background: #FFFFFF;
+    color: #0A3871;
+    transition: 0.3s all;
 }
 
 .conteudo-saida {
@@ -128,16 +114,19 @@ section {
     border-radius: 24px;
     padding: 24px;
     gap: 8px;
-    border-color: #0A3871;
-    background: #FFFFFF;
-    color: #0A3871;
+    border: none;
+    background: #0A3871;
+    color: #FFFFFF;
     font-size: 16px;
 }
 
 #botao-copiar:hover {
     cursor: pointer;
-    transition: 1s all;
-    transform: scale(1.1) rotate(1deg);
+    border: 1px solid;
+    border-color: #0A3871;
+    background: #FFFFFF;
+    color: #0A3871;
+    transition: 0.3s all;
 }
 
 footer {
@@ -154,69 +143,4 @@ footer {
     filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(296deg) brightness(104%) contrast(101%);
     width: 30px;
     padding: 10px;
-}
-
-@media screen and (max-width: 480px) {
-    .conteudo-entrada {
-        padding: 20px;
-        margin: auto auto;
-        text-align: center;
-    }
-
-    .conteudo-entrada textarea {
-        max-width: 100%;
-    }
-
-    .conteudo-entrada button {
-        margin-bottom: 5px;
-    }
-
-    .conteudo-saida {
-        padding: 20px;
-        margin: 10px auto 10px auto;
-        width: 85%;
-    }
-
-    #botao-criptografar {
-        width: 100%;
-    }
-
-    #botao-descriptografar {
-        width: 100%;
-    }
-
-    #botao-copiar {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 1365px) {
-    .conteudo-entrada {
-        padding: 20px;
-        margin: auto auto;
-        text-align: center;
-        width: 85%;
-    }
-
-    .conteudo-entrada textarea {
-        max-width: 100%;
-    }
-
-    .conteudo-entrada button {
-        margin-bottom: 5px;
-    }
-
-    .conteudo-saida {
-        padding: 20px;
-        margin: 10px auto 10px auto;
-        width: 85%;
-    }
-
-    .conteudo-saida textarea {
-        max-width: 100%;
-    }
-
-    #botao-copiar {
-        width: 100%;
-    }
 }
