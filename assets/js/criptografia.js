@@ -1,5 +1,6 @@
 const inputEntrada = document.getElementById('input-entrada');
 const inputSaida = document.getElementById('input-saida');
+const conteudoSaida = document.getElementById('conteudo-saida');
 
 function sweetAlertToast(tipoAlerta, mensagemAlerta) {
     const Toast = Swal.mixin({
@@ -23,6 +24,7 @@ function criptografar() {
     if (!msgEntrada) {
         sweetAlertToast('error', 'Digite um texto para criptografar.');
         inputSaida.value = '';
+        conteudoSaida.classList.add("hide");
     } else {
         const msgCriptografada = msgEntrada
             .replace(/e/g, 'enter')
@@ -31,6 +33,7 @@ function criptografar() {
             .replace(/o/g, 'ober')
             .replace(/u/g, 'ufat');
         inputSaida.value = msgCriptografada;
+        conteudoSaida.classList.remove("hide");
         sweetAlertToast('success', 'O texto foi criptografado.');
     }
 }
@@ -39,6 +42,7 @@ function descriptografar() {
     if (!msgEntrada) {
         sweetAlertToast('error', 'Digite um texto para descriptografar.');
         inputSaida.value = '';
+        conteudoSaida.classList.add("hide");
     } else {
         const msgDescriptografada = msgEntrada
             .replace(/enter/g, 'e')
@@ -47,6 +51,7 @@ function descriptografar() {
             .replace(/ober/g, 'o')
             .replace(/ufat/g, 'u');
         inputSaida.value = msgDescriptografada;
+        conteudoSaida.classList.remove("hide");
         sweetAlertToast('success', 'O texto foi descriptografado.');
     }
 }

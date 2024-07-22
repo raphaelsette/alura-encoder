@@ -13,7 +13,7 @@
         margin-bottom: 5px;
     }
 
-    .conteudo-saida {
+    #conteudo-saida {
         padding: 20px;
         margin: 10px auto 10px auto;
         width: 85%;
@@ -44,13 +44,13 @@
         margin-bottom: 5px;
     }
 
-    .conteudo-saida {
+    #conteudo-saida {
         padding: 20px;
         margin: 10px auto 10px auto;
         width: 85%;
     }
 
-    .conteudo-saida textarea {
+    #conteudo-saida textarea {
         max-width: 100%;
     }
 
