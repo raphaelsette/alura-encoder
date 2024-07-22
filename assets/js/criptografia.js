@@ -48,9 +48,18 @@ function descriptografar() {
         sweetAlertToast('success', 'O texto foi descriptografado.');
     }
 }
-function copiar() {
+function copiarTexto() {
     const copiarInputSaida = document.getElementById('input-saida');
-    copiarInputSaida.select();
-    document.execCommand("copy");
-    sweetAlertToast('success', 'O texto foi copiado.');
+    if (!copiarInputSaida.value.trim()) {
+        sweetAlertToast('error', 'Não há texto para copiar.');
+    } else {
+        copiarInputSaida.focus();
+        copiarInputSaida.select();
+        try {
+            document.execCommand("copy");
+            sweetAlertToast('success', 'O texto foi copiado.');
+        } catch (error) {
+            sweetAlertToast('error', 'Não foi possível copiar o texto.');
+        }
+    }
 }
