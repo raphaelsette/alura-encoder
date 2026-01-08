@@ -1,30 +1,44 @@
+![Status](https://img.shields.io/badge/status-ativo-brightgreen) ![Linguagem](https://img.shields.io/badge/linguagem-JavaScript-yellow)
 
 <div align="center">
 <a href="https://github.com/raphaelsette" target="_blank" rel="noreferrer"><img src="https://i.imgur.com/1fnHtDD.png" width="20%"/></a>
 </div>
 
-# Challenge Oracle Next Education + Alura
+# Codificador e Decodificador de Texto - Challenge Alura & Oracle
 
-Desenvolvimento de um codificador e decodificador de texto usando JavaScript, HTML5 e CSS3.
-- A página é capaz de converter as letras conforme regras abaixo:
+Este projeto foi desenvolvido como parte do Challenge Oracle Next Education em parceria com a Alura. Trata-se de uma aplicação web que permite criptografar e descriptografar textos, permitindo a troca de mensagens secretas entre pessoas que conheçam as regras de criptografia aplicadas.
 
-|Letra|Letra|
-| :---:| :---: |
-| a | ai |
-| e | enter |
-| i | imes |
-| o | ober |
-| u | ufat |
+## 🚀 Funcionalidades
 
-Exemplo
+- **Criptografar:** Converte o texto digitado seguindo as chaves de substituição definidas.
 
-Codificar: "oracle" => "oberraiclenter" 
+- **Descriptografar:** Retorna o texto criptografado para a sua versão original.
 
-Decodificar: "oberraiclenter" => "oracle"
+- **Copiar:** Botão para copiar o resultado para a área de transferência.
 
-## Visualização
+- **Interface Responsiva:** O layout se adapta a diferentes tamanhos de tela (desktop, tablets e celulares).
 
-[https://raphaelsette.github.io/alura-encoder/](https://raphaelsette.github.io/alura-encoder/)
+- **Alertas Personalizados:** Utiliza a biblioteca SweetAlert2 para notificações de erro e sucesso.
+
+## 🔑 As "Chaves" de Criptografia
+
+As regras de substituição utilizadas são:
+
+- A letra `e` é convertida para `enter`
+
+- A letra `i` é convertida para `imes`
+
+- A letra `a` é convertida para `ai`
+
+- A letra `o` é convertida para `ober`
+
+- A letra `u` é convertida para `ufat`
+
+**Exemplos:**
+
+- Codificar `oracle` transforma-se em `oberraiclenter`
+
+- Decodificar `gaitober` transforma-se em `gato`
 
 ## Referências
 
