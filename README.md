@@ -44,6 +44,7 @@ As regras de substituição utilizadas são:
 
 O projeto pode ser acessado diretamente através do GitHub Pages: 👉 https://raphaelsette.github.io/alura-encoder/
 
+<img src="./assets/img/screenshots/print_1.png" width="800px">
 
 ## 📝 Referências
 
